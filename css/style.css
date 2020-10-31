@@ -1,0 +1,683 @@
+@charset "utf-8";
+
+/*CSS Document*/
+
+html,
+body {
+    /*    background-image: url(../images/kabe8.jpg);*/
+    background-image: url(../images/noise1.png);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
+    width: 100%;
+    font-size: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+.container {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: firebrick;
+}
+
+span {
+    display: inline-block;
+    background-color: deepskyblue;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 3px 35px;
+}
+
+/*header*/
+header {
+    text-align: center;
+}
+
+.title {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+.title a:hover{
+    
+}
+.title img {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    padding: 20px 0 0 0;
+    margin: 0;
+}
+
+header h4 {
+    font-family: 'Kosugi Maru', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+header ul{
+    list-style: none;
+    display:inline-flex;
+    padding: 0;
+    margin: 0
+}
+header li a{
+    text-decoration: none;
+    display:inline-flex;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    color: dimgrey;
+}
+header li a:hover{
+    background-color:azure;
+}
+header li a img{
+    position: relative;
+    left:-20px;
+}
+header strong{
+    display: inline-block;
+    position: relative;
+    right: 50px;
+}
+header ul li{
+    border-right: 4px aquamarine dotted;
+}
+header ul :last-child{
+    border-right: none;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*PCではドロワーメニュー表示させない設定*/
+@media screen and (min-width:991px) {
+    .menu-drawer {
+        display: none;
+    }
+}
+
+/*main*/
+main {
+    text-align: center;
+}
+
+main .wrapperr {
+    background-image: url(../images/bg1.png);
+    background-size: contain;
+    background-position: bottom;
+}
+
+/*見出しの装飾*/
+.ribbon2 {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px;
+    /*フォントサイズ*/
+    background: #78d0f5;
+    /*背景色*/
+    color: aliceblue;
+    /*文字色*/
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.ribbon2 h3 {
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 1px #FFF;
+    /*上の破線*/
+    border-bottom: dashed 1px #FFF;
+    /*下の破線*/
+    line-height: 46px;
+}
+
+.ribbon2:before,
+.ribbon2:after {
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+}
+
+.ribbon2:before {
+    /*左端の山形*/
+    top: 0;
+    left: 0;
+    border-width: 30px 0px 30px 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+}
+
+.ribbon2:after {
+    /*右端の山形*/
+    top: 0;
+    right: 0;
+    border-width: 30px 15px 30px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+
+.ribbon2 h3 {
+    font-size: 1.6rem;
+}
+
+/*main-1*/
+.main-1 img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    /*--★縦横比維持して画像を表示★--*/
+    object-fit: cover;
+}
+
+main p {
+    margin: 20px;
+}
+
+.main-1 p {
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+#deco {
+    width: 40%;
+}
+
+.newsimg {
+    margin-top: 20px;
+    width: auto;
+    height: 400px;
+    background-image: url(../images/board2.png);
+    background-position: center;
+}
+
+.newsimg .denkyu {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 100px;
+    bottom: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.newsimg h3 {
+    padding-top: 100px;
+    font-size: 1.6rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: crimson;
+}
+
+.news-sentence {
+    display: block;
+    justify-content: center;
+    color: black;
+    position: relative;
+    bottom: 50px;
+}
+
+.news-sentence ul {
+    font-weight: 600;
+    list-style-position: inside;
+    list-style-type: square;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;
+    top: 20px;
+    left: 30px;
+
+}
+
+.newsimg span {
+    position: relative;
+    bottom: 60px;
+}
+
+.news-link {
+    margin-top: 100px;
+    position: relative;
+    bottom: 50px;
+}
+
+.main-img2 {
+    display: flex;
+}
+
+/*main-2*/
+.main-2{
+    margin-top: 20px;
+}
+.main-2 span {
+    margin: 40px 0;
+}
+
+.main-2 p {
+    font-weight: 600;
+}
+
+/*画像を傾ける*/
+.event-1 {
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+}
+
+.event-2 {
+    transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+}
+
+.event-3 {
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+}
+
+.main-2 img {
+    padding: 7px;
+    border: 10px solid floralwhite;
+    background-color: floralwhite;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 5px rgba(20, 20, 20, 0.2);
+    object-fit: ;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/*footer*/
+footer {
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(89, 179, 30, 0.65);
+    background-image: url(../images/noise1.png);
+    background-size: cover;
+    /*最下部に固定しておきたい。*/
+    position: relative;
+    bottom:0;
+    border: 2px rgba(89, 179, 30, 0.05) solid;
+}
+
+footer li {
+    font-size: 1.15rem;
+    font-weight: 600;
+    list-style-type: none;
+    border-bottom: none;
+    border-left: 2px solid #7f4600;
+    border-left-width: 4px;
+    margin:20px 0 30px 20px;
+    padding: 10px 20px 10px 30px;
+    -webkit-transform: skewX(150deg);
+    -moz-transform: skewX(150deg);
+    transform: skewX(150deg);
+}
+
+footer li a {
+    display: block;
+    transform: skewX(-150deg);
+    padding: 0 25px;
+}
+
+footer a:hover{
+    color: crimson;
+}
+footer .content{
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+footer .ftsent1 {
+    font-size: 1.3rem;
+    margin: 10px 70px;
+}
+
+.ftsent2 {
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+footer p {
+    height: 10px;
+}
+
+footer p a {
+    position: absolute;
+    right:10px;
+    bottom: 20px;
+}
+small{
+}
+footer .to-top{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    bottom: 20;
+    font-size: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*-------お問い合わせ--------*/
+.contact-main {
+    height: 900px;
+    width: 100%;
+}
+
+.page-titleC {
+    margin: 10px auto;
+    background-color: aliceblue;
+    background-image: url(../images/noise1.png);
+    width: 96%;
+
+}
+
+form .wrapper {
+    margin: 20px;
+}
+
+form div {
+    margin: 30px;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, .5);
+    border: 2px #000 solid;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    text-align: center;
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    font-weight: 600;
+    background-color: deepskyblue;
+    color: aliceblue;
+    border-radius: 0px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+/*-------年間行事--------*/
+
+.page-titleE {
+    background-color: aliceblue;
+    background-image: url(../images/noise1.png);
+}
+
+.event-main {
+    height: 2500px;
+    width: 80%;
+    display: inline-block;
+}
+.event-main h1{
+    color: black;
+}
+
+.season {
+    height: 400px;
+    padding-bottom: 30px;
+    margin-top:40px;
+    color: aliceblue;
+}
+
+.spring {
+    border-radius: 10px;
+/*    background-color: rgba(254, 90, 2, .7);*/
+/*    background-image: url(../images/noise1.png);*/
+    background-size: cover;
+}
+
+.summer {
+    border-radius: 10px;
+/*
+    background-color: rgba(252, 200, 2, .7);
+    background-image: url(../images/noise1.png);
+*/
+    background-size: cover;
+}
+
+.autumn {
+    border-radius: 10px;
+/*
+    background-color: rgba(219, 132, 73, .7);
+    background-image: url(../images/noise1.png);
+*/
+    background-size: cover;
+
+}
+
+.winter {
+    border-radius: 10px;
+/*
+    background-color: rgba(238, 220, 179, .7);
+    background-image: url(../images/noise1.png);
+*/
+    background-size: cover;
+}
+
+.season img {
+    width: 400px;
+    height: 250px;
+    padding: 7px;
+    border: 0px solid floralwhite;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+}
+
+.season div {
+    display: flex;
+    justify-content: center;
+}
+
+/*-------園について------*/
+.about-main {
+    height: 2000px;
+}
+.about-main .big_picture{
+    width: 900px;
+    height: 400px;
+    object-fit: contain;
+}
+.about-main table {
+    width: 60%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    font-weight: 600;
+}
+
+table tr {
+    border-bottom: solid 2px white;
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+table th {
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #52c2d0;
+    color: ;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table th:after {
+    display: block;
+    content: "";
+    border-left: 10px solid #52c2d0;
+}
+
+table td {
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+}
+
+.about-main h3 {
+    font-size: 1.3rem;
+    border-left: 4px solid aquamarine;
+    border-radius: 1px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto 20px auto;
+    padding-left: 5px;
+}
+
+.pan {
+    width: 200px;
+    margin: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.pan li {
+    display: flex;
+    /*横に並ぶように*/
+    justify-content: flex-start;
+    list-style: none;
+    font-weight: bold;
+    /*太字*/
+    color: dimgrey;
+}
+
+.pan li:after {
+    content: '\003e';
+    padding: 0 11px;
+    color: silver;
+}
+
+.pan li:last-child:after {
+    content: '';
+}
+
+.pan li a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.pan li a:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+/*-------保育内容--------*/
+.content-main {
+    height: 1000px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.content-main section {
+    margin: 40px 0;
+}
+
+.content-main h3 {
+    border-left: 3px solid #000;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-main p {
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.content-main ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+}
+
+.content-main li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/*スライド*/
+.swiper-container {
+    width: auto;
+    height: auto;
+}
+.swiper-wrapper .swiper-slide{
+    height: auto;
+    margin-top: 10px;
+}
+
+.swiper-container .swiper-slide img{
+    max-width: 100%;
+    height: auto;
+}
