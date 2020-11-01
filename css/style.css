@@ -51,7 +51,7 @@ header {
     top: 10px;
 }
 .title a:hover{
-    
+
 }
 .title img {
     width: 250px;
@@ -466,49 +466,46 @@ input[type="submit"] {
     width: 80%;
     display: inline-block;
 }
-.event-main h1{
-    color: black;
+.event-main .spring h1{
+    color:pink;
 }
-
+.event-main .summer h1{
+    color:rgb(60, 201, 205);
+}
+.event-main .autumn h1{
+    color:rgb(153, 110, 29);
+}
+.event-main .winter h1{
+    color:rgb(139, 173, 186);
+}
+.event-main p{
+  font-weight: bold;
+}
 .season {
     height: 400px;
     padding-bottom: 30px;
     margin-top:40px;
-    color: aliceblue;
 }
 
 .spring {
     border-radius: 10px;
-/*    background-color: rgba(254, 90, 2, .7);*/
-/*    background-image: url(../images/noise1.png);*/
     background-size: cover;
 }
 
 .summer {
     border-radius: 10px;
-/*
-    background-color: rgba(252, 200, 2, .7);
-    background-image: url(../images/noise1.png);
-*/
+
     background-size: cover;
 }
 
 .autumn {
     border-radius: 10px;
-/*
-    background-color: rgba(219, 132, 73, .7);
-    background-image: url(../images/noise1.png);
-*/
     background-size: cover;
 
 }
 
 .winter {
     border-radius: 10px;
-/*
-    background-color: rgba(238, 220, 179, .7);
-    background-image: url(../images/noise1.png);
-*/
     background-size: cover;
 }
 
@@ -589,6 +586,15 @@ table td {
     padding-left: 5px;
 }
 
+.about-main li{
+  
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.about-main strong{
+  border: none;
+  color: rgb(198, 106, 142);
+}
 .pan {
     width: 200px;
     margin: 25px;
@@ -666,7 +672,18 @@ table td {
     margin-bottom: 10px;
     text-align: left;
 }
-
+.content-main strong{
+  font-size: 1.3rem;
+}
+.content-main .chiiku{
+  color: pink;
+}
+.content-main .tokuiku{
+  color: darkgreen;
+}
+.content-main .taiiku{
+  color: lightblue;
+}
 /*スライド*/
 .swiper-container {
     width: auto;
